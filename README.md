@@ -20,5 +20,47 @@
 
 </details>
 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Harshita Portfolio</h1>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<section class="hero">
+  <h2 id="typing"></h2>
+</section>
+
+<section class="projects">
+  <button onclick="filterProjects('all')">All</button>
+  <button onclick="filterProjects('qa')">QA</button>
+  <button onclick="filterProjects('frontend')">Frontend</button>
+
+  <div class="project qa">Automation Testing Project</div>
+  <div class="project frontend">Portfolio Website</div>
+</section>
+
+<section class="contact">
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
 ## 📊 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=your-username)
