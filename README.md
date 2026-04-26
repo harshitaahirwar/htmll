@@ -62,5 +62,39 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+// Typing effect
+const text = "QA Engineer | Frontend Developer";
+let i = 0;
+
+function type() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 100);
+  }
+}
+type();
+
+// Dark mode toggle
+document.getElementById("themeToggle").onclick = () => {
+  document.body.classList.toggle("dark");
+};
+
+// Project filter
+function filterProjects(type) {
+  let projects = document.querySelectorAll(".project");
+  projects.forEach(p => {
+    if (type === "all" || p.classList.contains(type)) {
+      p.style.display = "block";
+    } else {
+      p.style.display = "none";
+    }
+  });
+}
 ## 📊 Stats
 ![Stats](https://github-readme-stats.vercel.app/api?username=your-username)
